@@ -34,11 +34,6 @@ const style = StyleSheet.create({
     lead_bar: {
         backgroundColor: '#a393eb'
     },
-    horizontal_layout: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginTop: 10
-    },
 })
 
 export default style
