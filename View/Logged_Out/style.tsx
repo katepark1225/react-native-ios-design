@@ -43,6 +43,12 @@ const style = StyleSheet.create({
     lead_bar: {
         backgroundColor: '#a393eb'
     },
+    textarea: {
+        paddingHorizontal: 10,
+        // paddingVertical: 10,  -- Android only !
+        paddingTop: 10,
+        paddingBottom: 10
+    }
 })
 
 export default style
