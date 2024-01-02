@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, Text, ScrollView } from 'react-native'
+import { View, Text, ScrollView, TextInput } from 'react-native'
 import style from './style'
 import { ReportingService } from '../../services/reporting'
 import { ReportingAnalytics } from '../../interface/reporting'
@@ -42,6 +42,7 @@ const Logged_Out = () => {
 
   return (
     <ScrollView>
+      <TextInput style={style.textarea} multiline={true} placeholder="Type here..." />
       {barChart}
     </ScrollView>
   )
