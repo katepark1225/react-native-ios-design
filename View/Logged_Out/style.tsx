@@ -18,13 +18,17 @@ const style = StyleSheet.create({
     chart_txt_wrapper: {
         flex: 1,
         justifyContent: 'flex-end',
-        alignItems: 'center'
+        alignItems: 'center',
+        borderRadius: 20,
+        backgroundColor: '#eaeaea',
     },
     chart_txt: {
         color: 'black',
         fontSize: fontSize(0.6),
         textAlign: 'center',
-        marginBottom: 3,
+        // padding: 3,
+        // borderRadius: 20,
+        // backgroundColor: '#eaeaea',
         // flex: 1,
         // textAlignVertical: 'bottom'  -- Android-specific property !
     },
