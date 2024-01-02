@@ -10,7 +10,7 @@ const Logged_Out = () => {
   useEffect(() => {
     ReportingService(payload)
     .then((data: any) => {
-      setAnalytics(data[2].reverse())
+      setAnalytics(data.reverse())
     })
   }, [])
 
