@@ -15,13 +15,18 @@ const style = StyleSheet.create({
     chart: {
 
     },
+    chart_txt_wrapper: {
+        flex: 1,
+        justifyContent: 'flex-end',
+        alignItems: 'center'
+    },
     chart_txt: {
         color: 'black',
         fontSize: fontSize(0.6),
         textAlign: 'center',
-        flex: 1,
-        borderColor: 'black',
-        textAlignVertical: 'bottom'
+        marginBottom: 3,
+        // flex: 1,
+        // textAlignVertical: 'bottom'  -- Android-specific property !
     },
     bar: {
         width: fontSize(2),
