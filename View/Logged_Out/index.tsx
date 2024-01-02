@@ -23,11 +23,17 @@ const Logged_Out = () => {
     analytics.map((row, index) => (
       <View key={index} style={style.chart_pair}>
         <View style={style.chart}>
-          <Text style={style.chart_txt}>{row.oppo}</Text>
+          <View style={style.chart_txt_wrapper}>
+            <Text style={style.chart_txt}>{row.oppo}</Text>
+          </View>
+          // <Text style={style.chart_txt}>{row.oppo}</Text>  -- Android only !
           <View style={[style.bar, style.oppo_bar, { minHeight: 10, height: calculateHeight(row.oppo) }]} />
         </View>
         <View style={style.chart}>
-          <Text style={style.chart_txt}>{row.lead}</Text>
+          <View style={style.chart_txt_wrapper}>
+            <Text style={style.chart_txt}>{row.lead}</Text>
+          </View>
+          // <Text style={style.chart_txt}>{row.lead}</Text> -- Android only !
           <View style={[style.bar, style.lead_bar, { minHeight: 10, height: calculateHeight(row.lead) }]} />
         </View>
       </View>
